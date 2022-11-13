@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+
+int main()
+{
+	int N, tmp, length; int sum = 0;
+
+	std::cin >> N;
+	
+	length = std::to_string(N).length();
+
+	for (int i = 1; i <= length; i++)
+	{
+		tmp = pow(10, (length - i));
+		
+		sum += (N / tmp);
+
+		N %= tmp;
+	}
+
+	std::cout << sum;
+}
