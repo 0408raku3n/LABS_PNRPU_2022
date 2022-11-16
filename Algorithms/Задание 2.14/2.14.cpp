@@ -6,6 +6,7 @@ int main()
 {
 	int N, tmp, length; int sum = 0;
 
+	std::cout << "Введите число N" << endl;
 	std::cin >> N;
 	
 	length = std::to_string(N).length();
@@ -19,5 +20,5 @@ int main()
 		N %= tmp;
 	}
 
-	std::cout << sum;
+	std::cout << "Сумма цифер числа N равна:" << sum;
 }
