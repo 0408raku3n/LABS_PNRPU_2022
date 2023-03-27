@@ -41,7 +41,7 @@ void addElem(ListElem* &start, int place, int k, int& size)
 
 	ListElem* new_elem = new ListElem;
 
-	cout << "Ââåäèòå çíà÷åíèå äëÿ äîáàâëåíèÿ: \n";
+	cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº Ã§Ã­Å•Ã·ÄºÃ­ÄÄº Ã¤Ã«Ë™ Ã¤Ã®Ã¡Å•Ã¢Ã«ÄºÃ­ÄË™: \n";
 	cin >> new_elem->data;
 
 	if (place == 1)
@@ -131,11 +131,11 @@ void searchElem(ListElem* start, int key)
 
 	if (point->data == key)
 	{
-		cout << "Ýëåìåíò íàéäåí! \n";
+		cout << "ÃÃ«ÄºÄ›ÄºÃ­Åˆ Ã­Å•Ã©Ã¤ÄºÃ­! \n";
 	}
 	else
 	{
-		cout << "Ýëåìåíò íå íàéäåí! \n";
+		cout << "ÃÃ«ÄºÄ›ÄºÃ­Åˆ Ã­Äº Ã­Å•Ã©Ã¤ÄºÃ­! \n";
 	}
 }
 
@@ -159,36 +159,36 @@ int main()
 
 	int N, position, iter, key_elem;
 
-	cout << "Ââåäèòå êîëè÷åñòâî ÷èñåë: \n";
+	cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº Ä™Ã®Ã«ÄÃ·ÄºÅ„ÅˆÃ¢Ã® Ã·ÄÅ„ÄºÃ«: \n";
 	cin >> N;
 	ListElem* Elements = createList(N);
-	printElem(Elements, N)
+	printElem(Elements, N);
 
-	cout << "Ââåäèòå ïîçèöèþ, êóäà äîáàâèòü ýëåìåíò: \n";
+	cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº ÄÃ®Ã§ÄÃ¶ÄÅ£, Ä™Ã³Ã¤Å• Ã¤Ã®Ã¡Å•Ã¢ÄÅˆÃ¼ Ã½Ã«ÄºÄ›ÄºÃ­Åˆ: \n";
 	cin >> position;
 	addElem(Elements, position, 1, N);
 	printElem(Elements, N);
 
-	cout << "Ââåäèòå êîëè÷åñòâî äîáàâëÿåìûõ ýëåìåíòîâ: \n";
+	cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº Ä™Ã®Ã«ÄÃ·ÄºÅ„ÅˆÃ¢Ã® Ã¤Ã®Ã¡Å•Ã¢Ã«Ë™ÄºÄ›Å±Å‘ Ã½Ã«ÄºÄ›ÄºÃ­ÅˆÃ®Ã¢: \n";
 	cin >> iter;
-	cout << "Ââåäèòå ïîçèöèþ, ñ êîòîðîé äîáàâèòü ýëåìåíòû: \n";
+	cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº ÄÃ®Ã§ÄÃ¶ÄÅ£, Å„ Ä™Ã®ÅˆÃ®Ä‘Ã®Ã© Ã¤Ã®Ã¡Å•Ã¢ÄÅˆÃ¼ Ã½Ã«ÄºÄ›ÄºÃ­ÅˆÅ±: \n";
 	cin >> position;
 	addElems(Elements, position, iter, N);
 	printElem(Elements, N);
 
-	cout << "Ââåäèòå ïîçèöèþ, ñ êîòîðîé óäàëèòü ýëåìåíò: \n";
+	cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº ÄÃ®Ã§ÄÃ¶ÄÅ£, Å„ Ä™Ã®ÅˆÃ®Ä‘Ã®Ã© Ã³Ã¤Å•Ã«ÄÅˆÃ¼ Ã½Ã«ÄºÄ›ÄºÃ­Åˆ: \n";
 	cin >> position;
 	deleteElem(Elements, position, 1, N);
 	printElem(Elements, N);
 
-	cout << "Ââåäèòå êîëè÷åñòâî óäàëÿåìûõ ýëåìåíòîâ: \n";
+	cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº Ä™Ã®Ã«ÄÃ·ÄºÅ„ÅˆÃ¢Ã® Ã³Ã¤Å•Ã«Ë™ÄºÄ›Å±Å‘ Ã½Ã«ÄºÄ›ÄºÃ­ÅˆÃ®Ã¢: \n";
 	cin >> iter;
-	cout << "Ââåäèòå ïîçèöèþ, ñ êîòîðîé óäàëèòü ýëåìåíòû: \n";
+	cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº ÄÃ®Ã§ÄÃ¶ÄÅ£, Å„ Ä™Ã®ÅˆÃ®Ä‘Ã®Ã© Ã³Ã¤Å•Ã«ÄÅˆÃ¼ Ã½Ã«ÄºÄ›ÄºÃ­ÅˆÅ±: \n";
 	cin >> position;
 	deleteElems(Elements, position, iter, N);
 	printElem(Elements, N);
 
-	cout << "Ââåäèòå ýëåìåíò äëÿ ïîèñêà: \n";
+	cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº Ã½Ã«ÄºÄ›ÄºÃ­Åˆ Ã¤Ã«Ë™ ÄÃ®ÄÅ„Ä™Å•: \n";
 	cin >> key_elem;
 	searchElem(Elements, key_elem);
 	deleteList(Elements);
