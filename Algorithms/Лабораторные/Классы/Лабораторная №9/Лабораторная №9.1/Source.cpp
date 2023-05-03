@@ -7,7 +7,6 @@ int main()
 	try
 	{
 		Vector x(2);
-		Vector y;
 		cout << x;
 		cout << "\nEnter number: ";
 		int i;
