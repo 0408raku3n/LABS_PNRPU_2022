@@ -11,7 +11,7 @@ int main()
 	int numbers[100] = {};
 	int N;
 
-	cout << "Ââåäèòå êîëè÷åñòâî ñèìâîëîâ: " << endl;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã±Ã¨Ã¬Ã¢Ã®Ã«Ã®Ã¢: " << endl;
 	cin >> N;
 
 	srand(time(NULL));
@@ -58,7 +58,7 @@ void countSort(int arr[], int size)
 
 	for (int i = size - 1; i >= 0; i--)
 	{
-		output[count[arr[i]]] = arr[i];
+		output[count[arr[i]] - 1] = arr[i];
 		count[arr[i]]--;
 	}
 
